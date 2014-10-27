@@ -1,0 +1,45 @@
+
+
+====== Packages used ==========
+install.packages("XLConnect")   // Read excel files
+install.packages("ggplot2")     // nice graphing
+install.packages("RSQLite") 
+ install.packages("pryr")
+
+===== Nice functions ======
+getwd() // Get working directoty
+setwd("") // SEt working directoy
+# used as comment
+for (i in seq(x)) // för att loopa igenom en array 
+c(xxxx) // concatenate
+
+// string functions
+paste("1","2","3", sep = " ")
+paste0(...) samma som ovan med sep=""
+
+// other
+typeof(X) säger vad X är av för typ
+
+// Filtrera
+z <- c(5,2-3,8)
+w <- z[z*z > 8]
+z*z > 8 detta blir en ny vector av boolen
+subset(z,z<2) kan också användas
+which gör samma som subset men returneras posiotionerna istället
+
+// *apply functions 
+appl(), tapply(), lapply()
+
+// DAte functions
+as.Date(d,"sdf")
+as.POSIXct(d) // Denna returnerar datum i POSIX format
+
+// DB
+dbClearResult(rs)
+
+
+// DataFrame
+nrow(datafram)
+ncol(datafram)
+head(datafram)
+mtcars[c("Datsun 710", "Camaro Z28"),]
